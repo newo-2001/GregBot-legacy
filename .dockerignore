@@ -1,5 +1,6 @@
 node_modules/
 Dockerfile
 config.example.json
+README.md
 .gitignore
 .dockerignore
