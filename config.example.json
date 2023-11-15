@@ -1,5 +1,6 @@
 {
     "discordToken": "",
     "botId": "",
-    "worldChannelId": ""
+    "worldChannelId": "",
+    "meesId": ""
 }

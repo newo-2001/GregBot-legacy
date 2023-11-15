@@ -41,6 +41,10 @@ async function handleMessage(msg) {
     if (msg.content == "!invest") {
         return await furia(msg);
     }
+
+    if (msg.author.id == config.meesId && msg.content.toLowerCase() == "saai") {
+        return msg.reply({files: [readFileSync("resources/saai.jpg")]});
+    }
     
     if (msg.content.match(/(^|.*\s)28([^\d].*|$)/) != null) {
         return msg.reply({files: [readFileSync("resources/28.jpg")]});
