@@ -42,7 +42,7 @@ async function handleMessage(msg) {
         return await furia(msg);
     }
 
-    if (msg.author.id == config.meesId && msg.content.toLowerCase() == "saai") {
+    if (msg.author.id == config.meesId && msg.content.toLowerCase().includes("saai")) {
         return msg.reply({files: [readFileSync("resources/saai.jpg")]});
     }
     
