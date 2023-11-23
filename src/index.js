@@ -27,6 +27,8 @@ const reactions = {
     "stand": ['🇸','🇹','🇦','🇳','🇩','🇴']
 }
 
+const saaiRegex = new RegExp("sa{2,}i|ga{2,}p|z{3,}");
+
 async function sleep(millis) {
     return await new Promise(resolve => setTimeout(resolve, millis));
 }
@@ -42,7 +44,7 @@ async function handleMessage(msg) {
         return await furia(msg);
     }
 
-    if (msg.author.id == config.meesId && msg.content.toLowerCase().includes("saai")) {
+    if (msg.author.id == config.meesId && saaiRegex.test(msg.content.toLowerCase())) {
         return msg.reply({files: [readFileSync("resources/saai.jpg")]});
     }
     
