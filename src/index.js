@@ -4,6 +4,7 @@ import { wordle, scheduleWordleReset } from "./wordle.js"
 import config from "../config.json" assert { type: "json" }
 import request from "request"
 import got from "got";
+import mentioned from "../resources/mentioned.json" assert { type: "json" }
 
 const client = new Client({intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.MESSAGE_CONTENT, Intents.FLAGS.GUILD_MESSAGES]})
 
@@ -50,6 +51,12 @@ async function handleMessage(msg) {
     
     if (msg.content.match(/(^|.*\s)28([^\d].*|$)/) != null) {
         return msg.reply({files: [readFileSync("resources/28.jpg")]});
+    }
+
+    for (const name in mentioned) {
+        if (msg.content.match(new RegExp(`\\b(${mentioned[name]})(\\W|$)`, "i")) != null) {
+            return msg.reply({files: [readFileSync(`resources/mentioned/${name}.jpg`)]})
+        }
     }
 
     for (let funny in funnies) {

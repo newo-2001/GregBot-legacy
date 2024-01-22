@@ -1,0 +1,22 @@
+{
+    "brazil": "brazil(ië|ia(ans?|n(en|s)?))?",
+    "philippines": "philippines|filipi(nos?|jn(en|se?)?)",
+    "vietnam": "vietnam(ese|ees|ezen)?",
+    "india": "indi(sche?|ë(rs?)?|a(se|as|ns?)?)",
+    "indonesia": "indonesi(a(ns?)?|sche|ë(rs?)?)",
+    "netherlands": "dutch|netherlands|nederland(se?|ers?)?",
+    "romania": "romania(ns?)?|roeme(nië|ens?|nen)",
+    "lithuania": "lithuania(ns?)?|litouw(en|se?|ers?)",
+    "finland": "fin(se?|ns|nish|land|n(en)?)?",
+    "mexico": "mexic(o|ans?|anen|aan(se?)?)",
+    "ireland": "ireland|irisch|ier(land|s|en)?",
+    "estonia": "estonia(ns?)?|est(isch|se?|land(se?|ers?)?)?",
+    "australia": "aus(tralia(ns?)?|sies?|trali(sche?|ë(rs?)?))",
+    "texas": "texa(s|ns?|an(se?)?|nen)",
+    "colombia": "colombi(a(ns?|anse?)?|ërs?)",
+    "new-zealand": "new[- ]zealand(ers?)?|nieuw[- ]zeeland(se?|ers?)?",
+    "9-11": "(9|nine)[-/ ](11|eleven)|september (11|eleven)th|(11|elf) september|the tragedy",
+    "maruki": "maruki",
+    "terraria": "terraria",
+    "toy-story": "toy[- ]story"
+}
