@@ -1,5 +1,5 @@
 {
-    "brazil": "brazil(ië|ia(ans?|n(en|s)?))?",
+    "brazil": "brazil(ië|ia(ans?|n(en|s)?))?|hell?",
     "philippines": "philippines|filipi(nos?|jn(en|se?)?)",
     "vietnam": "vietnam(ese|ees|ezen)?",
     "india": "indi(sche?|ë(rs?)?|a(se|as|ns?)?)",
