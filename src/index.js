@@ -281,6 +281,5 @@ client.on("ready", () => {
 });
 
 client.on("messageCreate", handleMessage);
-client.on("messageUpdate", (oldMsg, newMsg) => handleMessage(newMsg));
 
 client.login(config.discordToken);
