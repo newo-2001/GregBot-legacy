@@ -15,6 +15,7 @@
     "texas": "texa(s|ns?|an(se?)?|nen)",
     "colombia": "colombi(a(ns?|anse?)?|ërs?)",
     "new-zealand": "new[- ]zealand(ers?)?|nieuw[- ]zeeland(se?|ers?)?",
+    "pakistan": "pakista(ni?|ans)",
     "9-11": "(9|nine)[-/ ](11|eleven)|september (11|eleven)th|(11|elf) september|the tragedy",
     "maruki": "maruki",
     "terraria": "terraria",
