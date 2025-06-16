@@ -1,5 +1,5 @@
 {
-  "name": "silence-wench",
+  "name": "gregbot",
   "version": "1.0.0",
   "description": "",
   "main": "src/index.js",
@@ -12,8 +12,6 @@
   "dependencies": {
     "discord.js": "^13.5.0",
     "extract-zip": "^2.0.1",
-    "got": "^12.6.0",
-    "node-stream-zip": "^1.15.0",
-    "request": "^2.88.2"
+    "node-stream-zip": "^1.15.0"
   }
 }
