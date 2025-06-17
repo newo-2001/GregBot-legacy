@@ -94,8 +94,6 @@ async function invest(msg) {
     now.setTime(now.getTime() + 120_000)
     nextInvestTime = now;
 
-    let totalPrice = 0;
-
     let message = "";
     for (let item of items) {
         try {
@@ -105,7 +103,8 @@ async function invest(msg) {
             return msg.channel.send("Failed to retrieve investment information");
         }
     }
-
+    
+    const totalPrice = items.reduce((acc, item) => acc + (item.lastPrice ?? 0) * item.amount, 0);
     let delta = totalPrice - lastInvest;
     const stock = delta >= 0 ? ":chart_with_upwards_trend: " : ":chart_with_downwards_trend: ";
     const sign = delta < 0 ? '-' : '+';
@@ -142,7 +141,6 @@ async function retrieveInvestment(item) {
             const resp = await response.json();
             let price = resp.lowest_price.replace(',', '.').replace('-', '0').slice(0, -1);
             price = Number.parseFloat(price);
-            totalPrice += price * item.amount;
 
             let message = "";
             if (item.lastPrice) {
